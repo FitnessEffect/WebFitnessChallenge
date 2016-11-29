@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title id="Title">Fitness Challenge</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCrpXYbjI6GDWbVtKXvrGJlvoy5lKbjzNk",
+            authDomain: "testfirebase-d1054.firebaseapp.com",
+            databaseURL: "https://testfirebase-d1054.firebaseio.com",
+            storageBucket: "testfirebase-d1054.appspot.com",
+            messagingSenderId: "274415416264"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
+    <script src="mainFC.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheetFC.css" />
+
+</head>
+
+<body>
+
+    <h1><label>Fitness Challenge</label></h1>
+    <br>
+    <form action="exerciseForm">
+        <div class='rounded'>
+            </br>
+            <label>Username:</label>
+            <input type="text" name="Username" id="usernameID"><br>
+
+            <br>
+            <label>Exercise:</label>
+            <select id="exerciseID">
+      <option value="Row">Row</option>
+      <option value="Run">Run</option>
+      <option value="Double-Unders">Double-Unders</option>
+      <option value="Push-ups">Push-ups</option>
+    </select>
+
+    <input type="button" id="addBtn" value="+" onclick="createExercise();">
+
+            <label>Reps:</label>
+            <select id="repsID">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+    </select>
+
+            <label>Sets:</label>
+            <select id="setsID">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+            <br/>
+            <br/>
+
+            <label>Result:</label>
+            <input type="text" name="result" id="resultID"></br>
+            <br>
+
+            <p><input type="button" id="addBtn" value="Add Exercise" onclick="addExercise();"></p>
+        </div>
+
+    </form>
+    </br>
+    <div id='container'>
+    </div>
+</body>
+
+</html>

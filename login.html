@@ -1,0 +1,33 @@
+<head>
+    <title id="Title">Login Page</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCrpXYbjI6GDWbVtKXvrGJlvoy5lKbjzNk",
+            authDomain: "testfirebase-d1054.firebaseapp.com",
+            databaseURL: "https://testfirebase-d1054.firebaseio.com",
+            storageBucket: "testfirebase-d1054.appspot.com",
+            messagingSenderId: "274415416264"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
+    <script src="mainFC.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheetFC.css" />
+
+</head>
+
+<body>
+    <h1><label>Login Page</label></h1>
+    </br>
+    <label class="labels" id="emailLabel">Email:</label>
+    <input type="text" name="email" id="emailID">
+    </br>
+    <label class="labels" id="passwordLabel">Password:</label>
+    <input type="text" name="password" id="passwordID">
+    </br>
+    </br>
+    <a href="homePage.html"><input type='button' value="Confirm"></a>
+    <input type='button' value="Register" id="registerID" onclick="registerUser()">
+</body>

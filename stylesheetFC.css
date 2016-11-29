@@ -1,0 +1,29 @@
+body{
+ text-align: center;
+}
+
+h1{
+  font-family: cursive;
+}
+
+div{
+  border-style: solid;
+  border-width: thin;
+}
+
+#addBtn{
+  text-align: center;
+}
+
+.labels{
+  color:blue;
+}
+
+.btn{
+  width: 100%;
+  font-size: 15px;
+}
+
+#emailLabel{
+  padding-left: 22px;
+}
